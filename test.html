@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intelligent Irrigation | RUDRA Enterprises</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #f4faf7;
+      color: #222;
+    }
+
+    /* Wave background */
+    section.irrigation {
+      position: relative;
+      padding: 80px 20px 100px;
+      background: linear-gradient(180deg, #e6f7f9 0%, #f4faf7 100%);
+      overflow: hidden;
+    }
+
+    section.irrigation::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      background: url('https://svgshare.com/i/1C6N.svg') no-repeat center;
+      background-size: cover;
+      opacity: 0.2;
+    }
+
+    section.irrigation h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #005c4b;
+      margin-bottom: 20px;
+    }
+
+    section.irrigation > p {
+      text-align: center;
+      max-width: 850px;
+      margin: 0 auto 60px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    /* Glassmorphism card grid */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(0, 153, 153, 0.1), transparent 70%);
+      transform: scale(0);
+      transition: transform 0.5s ease;
+    }
+
+    .service-card:hover::after {
+      transform: scale(1);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-icon {
+      font-size: 2.5rem;
+      color: #005c4b;
+      margin-bottom: 15px;
+    }
+
+    .service-card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      color: #005c4b;
+    }
+
+    .service-card ul {
+      padding-left: 18px;
+      margin-bottom: 12px;
+    }
+
+    .service-card ul li {
+      font-size: 0.95rem;
+      color: #333;
+      margin-bottom: 6px;
+    }
+
+    .service-card p {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #007d66;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      section.irrigation h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section class="irrigation">
+  <h1>💧 Intelligent Irrigation</h1>
+  <p>
+    At <strong>RUDRA® Enterprises</strong>, we engineer smart irrigation systems that ensure precision, efficiency, and sustainability. 
+    By integrating automation, sensors, and IoT technology, we bring agriculture-grade innovation to landscaping, villas, resorts, sports complexes, and golf courses.
+  </p>
+
+  <div class="service-grid">
+
+    <div class="service-card">
+      <div class="service-icon">🌱</div>
+      <h2>Drip & Sprinkler Systems</h2>
+      <ul>
+        <li>Efficient root-zone water delivery</li>
+        <li>High-performance sprinklers mimic rainfall</li>
+        <li>Custom setups for lawns & sports arenas</li>
+        <li>Reduced wastage, deeper plant growth</li>
+      </ul>
+      <p>✨ Smarter irrigation for healthier landscapes.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🌀</div>
+      <h2>Multi-Stage Filtration Units</h2>
+      <ul>
+        <li>Removes sediments, algae & impurities</li>
+        <li>Protects drip emitters & sprinklers</li>
+        <li>Ensures uninterrupted water flow</li>
+        <li>Improves plant health & system life</li>
+      </ul>
+      <p>✨ Clean water means consistent performance.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">⚙️</div>
+      <h2>Smart Automation & Sensors</h2>
+      <ul>
+        <li>IoT-enabled controllers for monitoring</li>
+        <li>Soil, humidity & weather-based sensors</li>
+        <li>Remote operation via app/web</li>
+        <li>Automatic scheduling for efficiency</li>
+      </ul>
+      <p>✨ Intelligent systems that water only when needed.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">📶</div>
+      <h2>Remote Management (IoT)</h2>
+      <ul>
+        <li>Control pumps & valves from anywhere</li>
+        <li>Real-time alerts & system tracking</li>
+        <li>Cloud reports on water usage</li>
+        <li>Better decision-making with data</li>
+      </ul>
+      <p>✨ Irrigation at your fingertips, anytime.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">💊</div>
+      <h2>Fertigation Units</h2>
+      <ul>
+        <li>Automated fertilizer dosing</li>
+        <li>Uniform nutrient distribution</li>
+        <li>Reduces labor costs</li>
+        <li>Optimized plant growth</li>
+      </ul>
+      <p>✨ Combine irrigation with nutrition seamlessly.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🌧️</div>
+      <h2>Rainwater Harvesting</h2>
+      <ul>
+        <li>Integration with storage tanks</li>
+        <li>Automated water redirection</li>
+        <li>Reduces groundwater dependency</li>
+        <li>Saves resources sustainably</li>
+      </ul>
+      <p>✨ Harnessing nature for sustainable irrigation.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">⛳</div>
+      <h2>Turf & Sports Arena Irrigation</h2>
+      <ul>
+        <li>Precision-controlled turf watering</li>
+        <li>Consistent playing conditions</li>
+        <li>Sensors for turf health monitoring</li>
+        <li>Optimized for golf & stadiums</li>
+      </ul>
+      <p>✨ Professional-grade irrigation for sports excellence.</p>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
