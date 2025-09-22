@@ -288,7 +288,14 @@ button:focus {
     outline: 0px auto -webkit-focus-ring-color;
 }
 
+.owl-carousel .owl-item{
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
 .owl-carousel .owl-item img {
+
     width: auto!important;
 }
 
@@ -5849,6 +5856,8 @@ button:focus {
 .service_inner.type_four .content .icon_heading h2:hover a {
     color: #209e2e;
 }
+
+
 
 .service_inner.type_four .owl-carousel .owl-item img {
     width: 100%!important;
